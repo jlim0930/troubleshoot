@@ -29,7 +29,7 @@ $ kubectl -n <namespace> run troubleshoot --rm -i --tty --image jlim0930/trouble
 - If you need to access the k8s's nodes host network
 
 ```
-$ kubeclt -n <namespace> run troubleshoot --rm -i --tty --overrides='{"spec":"hostNetowrk": true}}' --image jlim0930/troubleshoot
+$ kubeclt -n <namespace> run troubleshoot --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}' --image jlim0930/troubleshoot
 ```
 
 - If you want to run this as a sidecar container along with your application
